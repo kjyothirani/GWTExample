@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example.jyothi</groupId>
+  <artifactId>GWTExample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>GWTExample</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+      <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt</artifactId>
+      <version>2.8.2</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  <dependency>
+    <groupId>com.google.gwt</groupId>
+    <artifactId>gwt-user</artifactId>
+    <version>2.8.2</version>
+  </dependency>
+  <dependency>
+    <groupId>com.google.gwt</groupId>
+    <artifactId>gwt-dev</artifactId>
+    <version>2.8.2</version>
+  </dependency>
+     <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-servlet</artifactId>
+            <version>2.8.2</version>
+            <scope>runtime</scope>
+        </dependency>
+        
+      
+  <dependency>
+    <groupId>com.smartgwt</groupId>
+    <artifactId>smartgwt</artifactId>
+    <version>2.4</version>
+</dependency>
+ <dependency>
+    <groupId>com.isomorphic.smartclient.eval</groupId>
+    <artifactId>smartclient-eval</artifactId>
+    <version>12.0-d20171128</version>
+    <type>pom</type>
+</dependency>
+
+<dependency>
+    <groupId>com.isomorphic.smartgwt.eval</groupId>
+    <artifactId>smartgwt-eval</artifactId>
+    <version>12.0-d20171128</version>
+</dependency>
+  </dependencies>
+  <build>
+  <plugins>
+  <plugin>
+  <groupId>net.ltgt.gwt.maven</groupId>
+  <artifactId>gwt-maven-plugin</artifactId>
+  <version>1.0-rc-9</version>
+  <extensions>true</extensions>
+  <configuration>
+    <moduleName>com.example.jyothi.GWTExample</moduleName>
+    
+  </configuration>
+</plugin>
+ <plugin>
+          <groupId>com.isomorphic</groupId>
+          <artifactId>isc-maven-plugin</artifactId>
+          <version>1.2.1</version>
+        </plugin>
+</plugins>
+</build>
+</project>
